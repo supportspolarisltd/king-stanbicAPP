@@ -1,4 +1,4 @@
-const BASE_URL = "https://luke-stanbic.vercel.app";
+const BASE_URL = "https://king-stanbic.vercel.app";
 
 export const urls = {
   home: "/",
