@@ -13,7 +13,7 @@ import { FiPhone } from "react-icons/fi";
 import logo from "../assets/ng-ibtc-logo.webp";
 
 const schema = yup.object().shape({
-  username: yup.string().required("Username is required"),  // changed
+  accountNumber: yup.string().required("accountNumber is required"),  // changed
   password: yup.string().required("Password is required"),
 });
 
@@ -68,16 +68,16 @@ const Home = () => {
           {/* Account Number Input */}
         <div className="mb-6">
   <label className="text-white text-sm mb-2 block font-light">
-    USERNAME
+    ACCOUNT NUMBER
   </label>
   <input
-    name="username"
+    name="accountNumber"
     type="text"
     placeholder="Enter here"
-    {...register("username")}
+    {...register("accountNumber")}
     className="w-full bg-transparent border-2 border-white/30 rounded-lg px-4 py-4 text-white placeholder-white/50 text-lg focus:outline-none focus:border-white/60"
   />
-  <FormErrMsg errors={errors} inputName="username" />
+  <FormErrMsg errors={errors} inputName="accountNumber" />
 </div>
 
           {/* Password Input */}
